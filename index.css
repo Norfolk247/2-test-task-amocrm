@@ -1,0 +1,170 @@
+/*const*/
+body {
+    background: #0E1014;
+    font-family: 'Inter';
+    font-style: normal;
+    color: #E4E5EA;
+}
+.gradient {
+    background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*background-clip: text;
+    text-fill-color: transparent;*/
+}
+p {
+    position: absolute;
+    margin: 0;
+    cursor: default;
+}
+a {
+    position: absolute;
+    cursor: pointer;
+}
+.mobile {
+    display: none;
+}
+.desktop {
+    display: block;
+}
+/*main blocks*/
+.app {
+    position: relative;
+    width: 1440px;
+    height: 980px;
+    margin: auto;
+}
+.header {
+    position: absolute;
+    width: 1140px;
+    height: 73px;
+    left: 150px;
+    top: 46px;
+}
+.footer {
+    position: absolute;
+    width: 1141px;
+    height: 315px;
+    left: 149px;
+    bottom: 0;
+}
+.btn {
+    position: absolute;
+    width: 262px;
+    height: 61px;
+    left: 1028px;
+    top: 535px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #E4E5EA;
+    background: #4077F3;
+    border: none;
+    cursor: pointer;
+}
+/*texts*/
+.razvivaem {
+    width: 275px;
+    height: 44px;
+    left: 148px;
+    top: 413px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+.welbex {
+    width: 247px;
+    height: 58px;
+    left: 147px;
+    top: 325px;
+    font-weight: 900;
+}
+.zarabativayte {
+    width: 362px;
+    height: 116px;
+    left: 147px;
+    top: 209px;
+    font-weight: 400;
+}
+.free {
+    width: 291px;
+    height: 44px;
+    left: 999px;
+    top: 224px;
+}
+.t1 {
+    font-size: 48px;
+    line-height: 58px;
+}
+.t2 {
+    font-size: 18px;
+    line-height: 22px;
+}
+.t3 {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Montserrat';
+}
+.c2 {
+    font-weight: 500;
+    text-align: right;
+}
+/*background balls*/
+.purple-ball {
+    border-radius: 50%;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 868px;
+    top: -2px;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+    filter: blur(5px);
+    backdrop-filter: blur(2px);
+}
+.red-ball {
+    border-radius: 50%;
+    position: absolute;
+    width: 83px;
+    height: 83px;
+    left: 519px;
+    top: 83px;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    backdrop-filter: blur(2px);
+}
+.red-ball2 {
+    border-radius: 50%;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 851px;
+    top: 547px;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    filter: blur(2.5px);
+    backdrop-filter: blur(2px);
+}
+.purple-light {
+    position: absolute;
+    width: 259px;
+    height: 259px;
+    left: 602px;
+    top: -154px;
+    background: #833AB4;
+    opacity: 0.5;
+    filter: blur(196px);
+}
+.red-light {
+    position: absolute;
+    width: 311px;
+    height: 311px;
+    left: -102px;
+    top: 251px;
+    background: #961A1A;
+    opacity: 0.5;
+    filter: blur(196px);
+}
+@media (max-width: 500px) {
+
+}
