@@ -4,6 +4,7 @@ body {
     font-family: 'Inter';
     font-style: normal;
     color: #E4E5EA;
+    margin: 0;
 }
 .gradient {
     background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
@@ -20,19 +21,20 @@ p {
 a {
     position: absolute;
     cursor: pointer;
-}
-.mobile {
-    display: none;
+    z-index: 1;
 }
 .desktop {
     display: block;
+}
+.mobile {
+    display: none;
 }
 /*main blocks*/
 .app {
     position: relative;
     width: 1440px;
     height: 980px;
-    margin: auto;
+    margin: 0 auto auto;
 }
 .header {
     position: absolute;
@@ -54,7 +56,8 @@ a {
     height: 61px;
     left: 1028px;
     top: 535px;
-    font-weight: 500;
+    /*font-weight: 500;*/
+    font-weight: 300;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
@@ -62,6 +65,7 @@ a {
     background: #4077F3;
     border: none;
     cursor: pointer;
+    font-family: 'Inter';
 }
 /*texts*/
 .razvivaem {
@@ -71,6 +75,8 @@ a {
     top: 413px;
     font-family: 'Montserrat';
     font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
 }
 .welbex {
     width: 247px;
@@ -89,8 +95,16 @@ a {
 .free {
     width: 291px;
     height: 44px;
-    left: 999px;
-    top: 224px;
+    position: absolute;
+    right: 0;
+    font-size: 18px;
+    line-height: 22px;
+
+    font-weight: 300;
+}
+.free span {
+    text-transform: uppercase;
+    font-weight: 600;
 }
 .t1 {
     font-size: 48px;
@@ -103,11 +117,37 @@ a {
 .t3 {
     font-size: 16px;
     line-height: 20px;
+    height: 40px;
+    font-weight: 200;
+    color: #E4E5EA;
     font-family: 'Montserrat';
 }
+/*column|line*/
 .c2 {
-    font-weight: 500;
+    /*font-weight: 500;*/
+    font-weight: 300;
     text-align: right;
+    position: absolute;
+    right: 150px;
+    top: 224px
+}
+.c2-c1 {
+    right: -1px;
+}
+.c2-c2 {
+    right: 165px;
+}
+.c2-l1 {
+    top: 84px
+}
+.c2-l2 {
+    top: 112px
+}
+.c2-l3 {
+    top: 182px
+}
+.c2-l4 {
+    top: 210px
 }
 /*background balls*/
 .purple-ball {
@@ -165,6 +205,187 @@ a {
     opacity: 0.5;
     filter: blur(196px);
 }
-@media (max-width: 500px) {
+.yellow-light {
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: -66px;
+    top: 574px;
+    background: #FCB045;
+    opacity: 0.4;
+    filter: blur(196px);
+}
+.yellow-ball {
+    display: none;
+    border-radius: 50%;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 21px;
+    top: 739px;
+    background: radial-gradient(84.78% 84.78% at 0% 11.96%, rgba(255, 233, 203, 0.568) 0%, rgba(184, 131, 18, 0.448) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), inset -4px 4px 7px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(2.5px);
+    transform: matrix(0, 1, 1, 0, 0, 0);
+}
+/*mobile*/
+.fix_header {
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    background: #06070b;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+.fix_header a {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    position: unset;
+    margin: 0 auto;
+}
+.main_screen {
+    display: none;
+    position: absolute;
+    top: 395px;
+    left: 16px;
+}
+.main_screen-item {
+    position: absolute;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    /*letter-spacing: 0.05em;*/
+    text-transform: uppercase;
+    height: 16px;
 
+    color: #e4e5ead6
+}
+.main_screen-item::before {
+    content:url("./icons/Line.svg");
+    position: absolute;
+    width: 10px;
+    height: 0;
+    top: -5px;
+    left: -15px;
+    /*border: 1px solid;
+    border-image-source: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);*/
+}
+@media (max-width: 500px) {
+    html, body {
+        max-width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+    .desktop {
+        display: none;
+    }
+    .app {
+        width: 320px;
+        margin: 0 auto;
+    }
+    .fix_header {
+        display: flex;
+    }
+    .footer {
+        left: 0;
+        top: 500px;
+        width: 100%;
+        height: 615px;
+        /*background: #0e1014;*/
+        z-index: 2;
+    }
+    .mobile {
+        display: block;
+    }
+    /*main screen*/
+    .zarabativayte {
+        left: 14px;
+        top: 95px;
+        width: 272px;
+        height: 88px;
+        position: relative;
+
+        font-weight: 300;
+    }
+    .welbex {
+        width: 186px;
+        height: 44px;
+        left: 15px;
+        top: 183px;
+    }
+    .razvivaem {
+        width: 271px;
+        height: 44px;
+        left: 14px;
+        top: 242px
+    }
+    .t1 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .t2 {
+        display: none;
+        font-size: 13px;
+        line-height: 16px;
+        /*letter-spacing: 0.05em;*/
+    }
+    .t3 {
+        display: none;
+    }
+    .c2 {
+        left: 15px;
+        top: 331px;
+        text-align: unset;
+    }
+    .free {
+        width: 272px;
+        left: 0;
+    }
+    .free span {
+        text-transform: none;
+    }
+    .main_screen {
+        display: block;
+    }
+    /*background balls*/
+    .purple-light {
+        left: 258px;
+        top: 162px;
+    }
+    .red-light {
+        width: 211px;
+        height: 210px;
+        left: -55px;
+        top: 296px;
+    }
+    .yellow-light {
+        display: block;
+    }
+    .yellow-ball {
+        display: block;
+    }
+    .red-ball {
+        width: 43px;
+        height: 43px;
+        left: 29px;
+        top: 457px;
+    }
+    .purple-ball {
+        width: 40px;
+        height: 40px;
+        left: 296px;
+        top: 291px;
+    }
+    .red-ball2 {
+        width: 18px;
+        height: 18px;
+        left: 278px;
+        top: 618px;
+    }
 }
