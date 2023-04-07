@@ -1,3 +1,20 @@
+/*line*/
+.footer-l1 {
+    top: 92px
+}
+.footer-l2 {
+    top: 121px
+}
+.footer-l3 {
+    top: 150px
+}
+.footer-l4 {
+    top: 179px
+}
+.footer-l5 {
+    top: 208px
+}
+/*column*/
 .footer-c1 {
     left: 0;
     position: absolute;
@@ -14,7 +31,9 @@
     right: 150px;
     position: absolute;
 }
+/*text*/
 .footer-t1 {
+    top: 55px;
     color: #656566;
     text-transform: uppercase;
     font-weight: 700;
@@ -29,10 +48,36 @@
     font-size: 16px;
     line-height: 19px;
 }
+/*column-line*/
+.footer-c2-l1 {
+    width: 144px;
+}
+
+.footer-c3-l1 {
+    width: 50px;
+}
+.footer-c3-l2 {
+    width: 212px;
+}
+
+.footer-c4-l1 {
+    right: -150px;
+    text-align: right
+}
+.footer-c4-l2 {
+    top: 92px;
+    right: -150px;
+    text-align: right
+}
+.footer-c4-l3 {
+    top: 171px;
+    right: -150px;
+    text-align: right
+}
+/*icons*/
 .footer-icon {
 
 }
-/*icons*/
 .telegram {
     position: absolute;
     width: 20px;
@@ -40,11 +85,17 @@
 }
 .telegram img {
     position: absolute;
-    left: 8.33%;
-    right: 8.27%;
-    top: 15.03%;
-    bottom: 15.03%;
+    width: 92%;
+    height: 92%;
+    /*left: 8.33%;*/
+    /*right: 8.27%;*/
+    /*top: 15.03%;*/
+    /*bottom: 15.03%;*/
     cursor: pointer;
+}
+.footer-tg {
+    left: 1061px;
+    top: 132px
 }
 .viber {
     position: absolute;
@@ -53,11 +104,17 @@
 }
 .viber img {
     position: absolute;
-    width: 16px;
-    height: 15.2px;
-    left: 2px;
-    top: 2px;
+    width: 92%;
+    height: 92%;
+    /*width: 16px;*/
+    /*height: 15.2px;*/
+    /*left: 2px;*/
+    /*top: 2px;*/
     cursor: pointer;
+}
+.footer-viber {
+    left: 1091px;
+    top: 132px
 }
 .whatsapp {
     position: absolute;
@@ -66,9 +123,165 @@
 }
 .whatsapp img {
     position: absolute;
-    left: 10%;
-    right: 10%;
-    top: 10%;
-    bottom: 10%;
+    width: 92%;
+    height: 92%;
+    /*left: 10%;*/
+    /*right: 10%;*/
+    /*top: 10%;*/
+    /*bottom: 10%;*/
     cursor: pointer;
+}
+.footer-wa {
+    left: 1121px;
+    top: 131px
+}
+/*outro*/
+.footer p {
+    width: 239px;
+    height: 15px;
+    left: 902px;
+    top: 260px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+}
+.outro-a {
+    width: 202px;
+    height: 15px;
+    left: 939px;
+    top: 280px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-decoration-line: underline;
+}
+@media (max-width: 500px) {
+    /*column*/
+    .footer-c1 {
+        left: 16px;
+        top: 41px;
+    }
+    .footer-c2 {
+        left: 16px;
+        top: 150px
+    }
+    .footer-c3 {
+        left: 163px;
+        top: 150px
+    }
+    .footer-c4 {
+        left: 16px;
+        top: 357px;
+    }
+    /*text*/
+    .footer-t1 {
+        top: 0;
+        font-size: 12px;
+        line-height: 15px;
+        /*letter-spacing: 0.05em;*/
+    }
+    .footer-t2 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    /*line*/
+    .footer-l1 {
+        top: 35px;
+        left: -1px;
+    }
+    .footer-l2 {
+        top: 62px;
+        left: -1px;
+    }
+    /*column-line*/
+    .footer-c2-l1 {
+        width: 75px;
+    }
+    .footer-c2-l2 {
+        top: 79px
+    }
+    .footer-c2-l3 {
+        top: 106px
+    }
+    .footer-c2-l4 {
+        top: 133px
+    }
+    .footer-c2-l5 {
+        top: 160px;
+        width: 115px;
+    }
+
+    .footer-c3-l1 {
+        top: 79px;
+        width: 123px;
+    }
+    .footer-c3-l2 {
+        top: 35px;
+        width: 123px;
+    }
+    .footer-c3-l3 {
+        top: 106px
+    }
+    .footer-c3-l4 {
+        top: 133px
+    }
+    .footer-c3-l5 {
+        top: 160px
+    }
+
+    .footer-c4-l1 {
+        left: 0;
+        text-align: unset;
+    }
+    .footer-c4-l2 {
+        left: -1px;
+        top: 35px;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+        text-align: unset;
+    }
+    .footer-c4-l3 {
+        left: -1px;
+        top: 96px;
+        text-align: unset;
+    }
+    /*icons*/
+    .telegram {
+        width: 24px;
+        height: 24px;
+    }
+    .footer-tg {
+        left: 16px;
+        top: 419px
+    }
+    .viber {
+        width: 24px;
+        height: 24px;
+    }
+    .footer-viber {
+        left: 50px;
+        top: 419px;
+    }
+    .whatsapp {
+        width: 24px;
+        height: 24px;
+    }
+    .footer-wa {
+        top: 419px;
+        left: 84px;
+    }
+    /*outro*/
+    .footer p {
+        left: 15px;
+        top: 520px
+    }
+    .outro-a {
+        left: 15px;
+        top: 540px
+    }
 }

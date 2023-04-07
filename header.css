@@ -5,13 +5,14 @@
     width: 503px;
     height: 19px;
 }
-.header-menu span {
+.header-menu a {
     position: absolute;
     height: 19px;
     top: 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    text-transform: none;
 }
 .header-phone {
     position: absolute;
