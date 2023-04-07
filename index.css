@@ -26,6 +26,9 @@ a {
 .desktop {
     display: block;
 }
+.mobile {
+    display: none;
+}
 /*main blocks*/
 .app {
     position: relative;
@@ -53,7 +56,8 @@ a {
     height: 61px;
     left: 1028px;
     top: 535px;
-    font-weight: 500;
+    /*font-weight: 500;*/
+    font-weight: 300;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
@@ -61,6 +65,7 @@ a {
     background: #4077F3;
     border: none;
     cursor: pointer;
+    font-family: 'Inter';
 }
 /*texts*/
 .razvivaem {
@@ -94,9 +99,12 @@ a {
     right: 0;
     font-size: 18px;
     line-height: 22px;
+
+    font-weight: 300;
 }
 .free span {
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-weight: 600;
 }
 .t1 {
     font-size: 48px;
@@ -109,11 +117,15 @@ a {
 .t3 {
     font-size: 16px;
     line-height: 20px;
+    height: 40px;
+    font-weight: 200;
+    color: #E4E5EA;
     font-family: 'Montserrat';
 }
 /*column|line*/
 .c2 {
-    font-weight: 500;
+    /*font-weight: 500;*/
+    font-weight: 300;
     text-align: right;
     position: absolute;
     right: 150px;
@@ -219,14 +231,17 @@ a {
 }
 /*mobile*/
 .fix_header {
+    z-index: 3;
+    position: absolute;
     width: 100%;
     height: 55px;
-    /*background: #06070b;*/
+    background: #06070b;
     justify-content: space-between;
     align-items: center;
     display: none;
 }
 .fix_header a {
+    font-weight: 300;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
@@ -248,6 +263,8 @@ a {
     /*letter-spacing: 0.05em;*/
     text-transform: uppercase;
     height: 16px;
+
+    color: #e4e5ead6
 }
 .main_screen-item::before {
     content:url("./icons/Line.svg");
@@ -262,6 +279,7 @@ a {
 @media (max-width: 500px) {
     html, body {
         max-width: 100%;
+        height: 100vh;
         overflow-x: hidden;
     }
     .desktop {
@@ -280,15 +298,20 @@ a {
         width: 100%;
         height: 615px;
         /*background: #0e1014;*/
-        z-index: 1;
+        z-index: 2;
+    }
+    .mobile {
+        display: block;
     }
     /*main screen*/
     .zarabativayte {
         left: 14px;
-        top: 40px;
+        top: 95px;
         width: 272px;
         height: 88px;
         position: relative;
+
+        font-weight: 300;
     }
     .welbex {
         width: 186px;
